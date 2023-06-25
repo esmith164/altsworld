@@ -3,12 +3,12 @@
     <Navbar />
     <div class="container mx-auto">
       <div class="grid grid-cols-12">
-        <div class="col-span-8 mt-24">
-          <h1 class="text-white text-5xl font-bold mb-6">
+        <div class="col-span-12 lg:col-span-8 mt-24">
+          <h1 class="text-white text-4xl lg:text-5xl font-bold mb-6" data-aos="fade-down">
             <span class="text-green"> Your #1 Source</span> for cheap and
             affordable accounts
           </h1>
-          <p class="text-sm text-white leading-10 mb-8">
+          <p class="text-sm text-white leading-10 mb-8" data-aos="fade-down">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which don’t look even slightly
@@ -17,11 +17,12 @@
           <a
             href="#"
             class="gradient-bg button-default duration-200 hover:opacity-70"
+            data-aos="zoom-in"
           >
             Get Started
           </a>
           <div class="statistics">
-            <div class="stat" v-for="(stat, idx) in stats" :key="idx">
+            <div class="stat" v-for="(stat, idx) in stats" :key="idx" data-aos="fade">
               <h2>{{ stat.value }}</h2>
               <h4>{{ stat.name }}</h4>
               <div class="w-10 h-1 bg-green rounded-full"></div>
@@ -37,6 +38,7 @@
     background: url("@/assets/img/header.png") center center no-repeat;
     background-size: cover;
     min-height: 100vh;
+    @apply px-4;
     .statistics {
       @apply grid grid-cols-3 mt-40;
       .stat {

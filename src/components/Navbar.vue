@@ -30,7 +30,7 @@
   .navbar-component {
     @apply py-12;
     .navbar-nav {
-      @apply flex gap-x-8 items-center;
+      @apply hidden lg:flex gap-x-8 items-center;
       li {
         a {
           @apply text-white text-sm uppercase opacity-70 hover:opacity-100 duration-200;
@@ -38,7 +38,7 @@
       }
     }
     .button-group {
-      @apply flex ml-auto gap-x-3;
+      @apply flex ml-auto gap-x-3 items-center;
     }
   }
 </style>
