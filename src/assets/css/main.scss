@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'General Sans';
+  src:
+    url('../fonts/GeneralSans-Bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'General Sans';
+  src:
+    url('.,/fonts/GeneralSans-Semibold.woff') format('woff');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'General Sans';
+  src:
+    url('./fonts/GeneralSans-Medium.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'General Sans';
+  src:
+    url('../fonts/GeneralSans-Regular.woff') format('woff');
+  font-weight: 400;
+}
+body {
+  font-family: 'General Sans', sans-serif;
+  @apply antialiased;
+}
+.gradient-bg {
+  background: linear-gradient(90deg, rgba(118,200,147,1) 0%, rgba(22,138,173,1) 100%);
+}
+.button-default {
+  @apply px-8 flex h-12 w-fit items-center text-xs font-bold text-white uppercase rounded-xl;
+}

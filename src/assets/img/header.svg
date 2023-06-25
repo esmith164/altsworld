@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1078" viewBox="0 0 1920 1078">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#168aad" stop-opacity="0.557"/>
+      <stop offset="0.034" stop-color="#168aad" stop-opacity="0.871"/>
+      <stop offset="0.641" stop-color="#198cac" stop-opacity="0.984"/>
+      <stop offset="1" stop-color="#0e556a" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip-Web_1920_6">
+      <rect width="1920" height="1078"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_6" data-name="Web 1920 – 6" clip-path="url(#clip-Web_1920_6)">
+    <rect width="1920" height="1078" fill="#0c1a24"/>
+    <ellipse id="Ellipse_20" data-name="Ellipse 20" cx="152.257" cy="184.921" rx="152.257" ry="184.921" transform="translate(1513.085 466.492) rotate(18)" opacity="0.191" fill="url(#radial-gradient)"/>
+    <ellipse id="Ellipse_19" data-name="Ellipse 19" cx="357.838" cy="130.308" rx="357.838" ry="130.308" transform="translate(186.943 231.984) rotate(18)" opacity="0.191" fill="url(#radial-gradient)"/>
+  </g>
+</svg>
