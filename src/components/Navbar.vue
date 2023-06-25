@@ -1,6 +1,6 @@
 <template>
   <div class="navbar-component">
-    <div class="container mx-auto flex">
+    <div class="container mx-auto flex bg-deep p-3 rounded-2xl">
       <div class="w-16 h-16 gradient-bg rounded-2xl opacity-40 mr-8"></div>
       <ul class="navbar-nav">
         <li><a href="#">Home</a></li>

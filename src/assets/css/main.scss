@@ -24,7 +24,7 @@
 }
 body {
   font-family: 'General Sans', sans-serif;
-  @apply antialiased;
+  @apply antialiased bg-[#0C1A24];
 }
 .gradient-bg {
   background: linear-gradient(90deg, rgba(118,200,147,1) 0%, rgba(22,138,173,1) 100%);

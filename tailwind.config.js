@@ -6,6 +6,7 @@ export default {
       green: '#76C893',
       white: '#FFFFFF',
       blue: '#168AAD',
+      deep: '#152633',
       dark: '#0C1A24'
     }
   },
