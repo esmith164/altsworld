@@ -8,7 +8,7 @@
         There are many variations of passages of Lorem Ipsum available, but the
         majority have suffered alteration in some form, by injected humour.
       </p>
-      <div class="grid grid-cols-3 gap-x-12">
+      <div class="grid lg:grid-cols-3 gap-12">
         <div v-for="(feature, idx) in features" :key="idx" class="feature" data-aos="fade-down">
           <div class="icon-wrapper gradient-bg" data-aos="zoom-in">
             <i class="fa fa-headset"></i>

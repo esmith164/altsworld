@@ -12,7 +12,7 @@
         </ul>
         <h5>$0.00 USD</h5>
       </div>
-      <div class="w-4/12">
+      <div class="w-4/12 flex">
         <span class="status-tag">In Stock</span>
       </div>
     </div>
@@ -31,7 +31,7 @@
     @apply text-white text-sm;
   }
   .status-tag {
-    @apply bg-green text-xs text-white font-bold uppercase px-2 py-1 rounded;
+    @apply bg-green text-[12px] text-white font-bold uppercase px-2 py-1 rounded ml-auto;
   }
 }
 .rating {
