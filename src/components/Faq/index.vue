@@ -14,7 +14,7 @@
           </a>
         </div>
         <!-- FAQ -->
-        <div class="col-span-8">
+        <div class="col-span-8 flex flex-col gap-y-4">
           <Question
             v-for="question in questions"
             :key="question.title"
@@ -35,6 +35,24 @@ export default {
   },
   setup() {
     const questions = [
+      {
+        title: "What is Lorem Ipsum?",
+        subtitle: "Yes,  typically 24/48 hours..",
+        content:
+          "Praesent rutrum libero sed enim tempor egestas. Nam id felis ultrices, rhoncus nibh convallis, ornare nisi. Donec consectetur ut purus vulputate vestibulum. Proin lorem justo, ullamcorper et laoreet sit amet, varius quis massa. Suspendisse at est ut urna viverra efficitur et non risus.",
+      },
+      {
+        title: "What is Lorem Ipsum?",
+        subtitle: "Yes,  typically 24/48 hours..",
+        content:
+          "Praesent rutrum libero sed enim tempor egestas. Nam id felis ultrices, rhoncus nibh convallis, ornare nisi. Donec consectetur ut purus vulputate vestibulum. Proin lorem justo, ullamcorper et laoreet sit amet, varius quis massa. Suspendisse at est ut urna viverra efficitur et non risus.",
+      },
+      {
+        title: "What is Lorem Ipsum?",
+        subtitle: "Yes,  typically 24/48 hours..",
+        content:
+          "Praesent rutrum libero sed enim tempor egestas. Nam id felis ultrices, rhoncus nibh convallis, ornare nisi. Donec consectetur ut purus vulputate vestibulum. Proin lorem justo, ullamcorper et laoreet sit amet, varius quis massa. Suspendisse at est ut urna viverra efficitur et non risus.",
+      },
       {
         title: "What is Lorem Ipsum?",
         subtitle: "Yes,  typically 24/48 hours..",
