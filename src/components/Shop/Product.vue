@@ -1,51 +1,44 @@
 <template>
   <div class="product">
-    <div class="product-image mb-6">
+    <div class="product-image mb-3">
       <!-- Placeholder -->
-      <div class="bg-deep h-[200px] rounded-2xl"></div>
+      <div class="bg-white opacity-5 h-[180px] rounded-2xl"></div>
     </div>
-    <div class="product-info">
-      <div class="w-8/12">
-        <h4>Example Product</h4>
-        <ul class="rating">
-          <li v-for="rating in 5" :key="rating"><i class="fa fa-star"></i></li>
-        </ul>
-        <h5>$0.00 USD</h5>
-      </div>
-      <div class="w-4/12 flex">
-        <span class="status-tag">In Stock</span>
-      </div>
+    <div class="product-info flex items-center my-4">
+      <h4 class="text-center">Example Product</h4>
+      <span class="status-tag ml-auto">In Stock</span>
     </div>
-    <button class="button-default gradient-bg">
-      Purchase Now
-    </button>
+    <button class="button-default gradient-bg">Purchase Now | $5.00</button>
   </div>
 </template>
 <style lang="scss" scoped>
-.product-info {
-  @apply flex items-center mb-4;
-  h4 {
-    @apply text-white text-sm font-bold uppercase;
+  .product {
+    @apply bg-deep p-4 rounded-3xl;
   }
-  h5 {
-    @apply text-white text-sm;
+  .product-info {
+    @apply  mb-4;
+    h4 {
+      @apply text-white text-sm font-bold uppercase;
+    }
+    h5 {
+      @apply text-white text-sm;
+    }
+    .status-tag {
+      @apply bg-green text-[12px] text-white font-bold uppercase px-2 py-1 rounded ml-auto;
+    }
   }
-  .status-tag {
-    @apply bg-green text-[12px] text-white font-bold uppercase px-2 py-1 rounded ml-auto;
+  .rating {
+    @apply flex gap-x-1 mb-2;
+    li {
+      @apply text-xs text-[#FFC33C];
+    }
   }
-}
-.rating {
-  @apply flex gap-x-1 mb-2;
-  li {
-    @apply text-xs text-[#FFC33C];
+  button {
+    @apply w-full justify-center hover:opacity-70 duration-200;
   }
-}
-button {
-  @apply w-full justify-center hover:opacity-70 duration-200;
-}
- </style>
+</style>
 <script>
 export default {
-  name: 'Product'
-}
+  name: "Product",
+};
 </script>

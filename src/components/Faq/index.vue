@@ -27,6 +27,11 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.faq-component {
+  @apply py-24;
+}
+</style>
 <script>
 import Question from "./Question.vue";
 export default {
