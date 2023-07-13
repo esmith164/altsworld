@@ -58,14 +58,14 @@ Click on the email in your inbox and you should see a link, click the link and y
 Please do this to all orders you make on our shop, it helps us out a lot!`,
       },
       {
-        name: "Customer Service",
+        name: "Customer Support",
         icon: "fa fa-lock",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. There are but the majority have suffererd.",
       },
       {
-        name: "Customer Service",
-        icon: "fa fa-lock",
+        name: "Reward Program",
+        icon: "fa fa-gift",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. There are but the majority have suffererd.",
       },
