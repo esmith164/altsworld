@@ -9,9 +9,14 @@
         majority have suffered alteration in some form, by injected humour.
       </p>
       <div class="grid lg:grid-cols-3 gap-12">
-        <div v-for="(feature, idx) in features" :key="idx" class="feature" data-aos="fade-down">
+        <div
+          v-for="(feature, idx) in features"
+          :key="idx"
+          class="feature"
+          data-aos="fade-down"
+        >
           <div class="icon-wrapper gradient-bg" data-aos="zoom-in">
-            <i class="fa fa-headset"></i>
+            <i :class="feature.icon"></i>
           </div>
           <h4 data-aos="fade-down">{{ feature.name }}</h4>
           <p data-aos="fade-down">{{ feature.description }}</p>
@@ -33,7 +38,6 @@
       p {
         @apply text-white text-sm leading-8;
       }
-
     }
   }
 </style>
@@ -42,10 +46,16 @@ export default {
   setup() {
     const features = [
       {
-        name: "Customer Service",
-        icon: "fa fa-lock",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. There are but the majority have suffererd.",
+        name: "Leave a feedback!",
+        icon: "fa fa-star",
+        description: `You can leave feedback by following instructions below:
+
+Purchase any product from our shop.
+
+Wait till your product delivers to your inbox
+
+Click on the email in your inbox and you should see a link, click the link and you should see the option that says: "Rate this order."
+Please do this to all orders you make on our shop, it helps us out a lot!`,
       },
       {
         name: "Customer Service",

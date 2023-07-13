@@ -16,12 +16,14 @@
         >
           <i class="fa fa-telegram"></i>
         </a>
+        <!--
         <a
           href="#"
           class="bg-green h-12 w-12 text-white text-sm flex items-center justify-center rounded-xl"
         >
           <i class="fa fa-shopping-cart"></i>
         </a>
+        -->
       </div>
     </div>
   </div>

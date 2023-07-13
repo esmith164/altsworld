@@ -1,8 +1,8 @@
 <template>
   <div class="faq-component">
     <div class="container mx-auto">
-      <div class="grid grid-cols-12 gap-x-8">
-        <div class="col-span-4">
+      <div class="grid grid-cols-12 gap-x-8 gap-y-12">
+        <div class="col-span-12 lg:col-span-4">
           <!-- Title area -->
           <h2 class="text-4xl text-white font-bold uppercase mb-4">Faq</h2>
           <p class="text-white leading-10 text-sm mb-10">
@@ -14,7 +14,7 @@
           </a>
         </div>
         <!-- FAQ -->
-        <div class="col-span-8 flex flex-col gap-y-4">
+        <div class="col-span-12 lg:col-span-8 flex flex-col gap-y-4">
           <Question
             v-for="question in questions"
             :key="question.title"

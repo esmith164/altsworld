@@ -32,3 +32,12 @@ body {
 .button-default {
   @apply px-8 flex h-12 w-fit items-center text-xs font-bold text-white uppercase rounded-xl;
 }
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s ;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}

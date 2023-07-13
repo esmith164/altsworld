@@ -13,7 +13,10 @@
         v-if="!shop.loading"
       >
         <Product v-for="x in shop.listings" :key="x" :product="x" />
-        <CheckoutModal v-if="router.currentRoute.value.query.checkout_group" />
+               <CheckoutModal
+            v-if="router.currentRoute.value.query.checkout_group"
+          />
+
       </div>
     </div>
   </div>
@@ -46,7 +49,7 @@ export default {
   setup() {
     const router = useRouter();
     const shop = useShopStore();
-    shop.fetch()
+    shop.fetch();
     return {
       router,
       shop,
