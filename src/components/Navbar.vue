@@ -1,7 +1,7 @@
 <template>
   <div class="navbar-component">
     <div class="container mx-auto flex bg-deep p-3 rounded-2xl">
-      <div class="w-16 h-16 gradient-bg rounded-2xl opacity-40 mr-8"></div>
+      <img src="@/assets/img/logo.png" class="h-8 ml-2 mr-8 my-auto">
       <ul class="navbar-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>

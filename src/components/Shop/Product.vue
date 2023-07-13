@@ -2,13 +2,17 @@
   <div class="product">
     <div class="product-image mb-3">
       <!-- Placeholder -->
-      <div class="bg-white opacity-5 h-[180px] rounded-2xl"></div>
+      <img :src="`https://imagedelivery.net/${product.group.cfImageId}/productCard`" class="rounded-xl" />
     </div>
     <div class="product-info flex items-center my-4">
-      <h4 class="text-center">Example Product</h4>
-      <span class="status-tag ml-auto">In Stock</span>
+      <h4 class="text-center">{{ product.group.title }}</h4>
     </div>
-    <button class="button-default gradient-bg">Purchase Now | $5.00</button>
+    <router-link :to="`?checkout_group=${product.group.id}`"
+      class="button-default gradient-bg"
+    >
+    
+      Purchase Now | ${{ product.minPriceDetails.amount }}
+  </router-link>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -16,9 +20,9 @@
     @apply bg-deep p-4 rounded-3xl;
   }
   .product-info {
-    @apply  mb-4;
+    @apply mb-4;
     h4 {
-      @apply text-white text-sm font-bold uppercase;
+      @apply text-white text-sm font-bold;
     }
     h5 {
       @apply text-white text-sm;
@@ -33,12 +37,24 @@
       @apply text-xs text-[#FFC33C];
     }
   }
-  button {
+  a {
     @apply w-full justify-center hover:opacity-70 duration-200;
+    text-transform: none !important;
   }
 </style>
 <script>
 export default {
   name: "Product",
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+  },
+  setup(props) {
+    return {
+      product: props.product,
+    }
+  }
 };
 </script>

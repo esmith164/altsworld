@@ -25,7 +25,7 @@
             <div class="stat" v-for="(stat, idx) in stats" :key="idx" data-aos="fade">
               <h2>{{ stat.value }}</h2>
               <h4>{{ stat.name }}</h4>
-              <div class="w-10 h-1 bg-green rounded-full"></div>
+              <div class="w-10 h-1 bg-green rounded-full mx-auto lg:mx-0"></div>
             </div>
           </div>
         </div>
@@ -40,9 +40,9 @@
     min-height: 100vh;
     @apply px-4;
     .statistics {
-      @apply grid grid-cols-3 mt-40;
+      @apply grid gap-y-12 lg:grid-cols-3  mt-12 lg:mt-40 mb-12 lg:mb-0;
       .stat {
-        @apply flex flex-col;
+        @apply flex flex-col text-center lg:text-left;
         h2 {
           @apply text-green text-4xl font-bold mb-2;
         }
